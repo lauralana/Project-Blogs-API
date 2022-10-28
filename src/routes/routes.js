@@ -1,10 +1,13 @@
-// const express = require('express');
+const express = require('express');
 
-// // rotas do controller
-// const postController = require('../controllers/loginController');
+// rotas de validação
+const { validateLogin } = require('../middlewares/loginValidation');
 
-// const route = express.Router();
+// rotas do controller
+const postController = require('../controllers/userController');
 
-// route.post('/login', postController.insertLogin);
+const route = express.Router();
 
-// module.exports = route;
+route.post('/login', validateLogin, postController.insertLoginOnController);
+
+module.exports = route;
