@@ -1,4 +1,4 @@
-const { insertLogin, insertUser } = require('../services/userService');
+const { insertLogin, insertUser, getAllUsers } = require('../services/userService');
 
 const insertLoginOnController = async (req, res) => {
     const { email } = req.body;
@@ -17,7 +17,16 @@ const insertUserOnController = async (req, res) => {
     return result;
 };
 
+const getAllUsersOnController = async (_req, res) => {
+    const users = await getAllUsers();
+    console.log(users);
+    const result = res.status(200).json(users);
+
+    return result;
+};
+
 module.exports = {
     insertLoginOnController,
     insertUserOnController,
+    getAllUsersOnController,
 };

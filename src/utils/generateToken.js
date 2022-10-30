@@ -13,6 +13,16 @@ const generateToken = (id) => {
   return token;
 };
 
+const verifyToken = (token) => {
+  try {
+  const tokenVerify = JWT.verify(token, jwtSecret);
+    return tokenVerify;
+  } catch (error) {
+    return false;
+}
+};
+
 module.exports = {
   generateToken,
+  verifyToken,
 };
