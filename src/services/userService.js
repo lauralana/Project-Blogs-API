@@ -1,3 +1,4 @@
+const camelize = require('camelize');
 const { User } = require('../models');
 const { generateToken } = require('../utils/generateToken');
 
@@ -24,8 +25,7 @@ const getAllUsers = async () => {
     const users = await User.findAll({
         attributes: { exclude: ['password'] },
     });
-    // console.log(users);
-    return users;
+    return camelize(users).map(({ dataValues }) => dataValues);
 };
 
 const getUserById = async (id) => {
@@ -33,8 +33,8 @@ const getUserById = async (id) => {
         where: { id },
         attributes: { exclude: ['password'] },
       });
-    
-      return userById;
+
+      return camelize(userById);
 };
 
 module.exports = {
