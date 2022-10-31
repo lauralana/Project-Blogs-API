@@ -31,11 +31,13 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.INTEGER,
     },
-    name: DataTypes.STRING,
-    
+    name: {
+      type: DataTypes.STRING,
+    },
   },
   {
     timestamps: false,
+    underscored: true,
     tableName: 'categories',
   });
 
