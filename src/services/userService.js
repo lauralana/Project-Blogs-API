@@ -12,7 +12,6 @@ const insertLogin = async (email) => {
 
 const insertUser = async ({ displayName, email, password }) => {
     const validateUser = await User.findOne({ where: { email } });
- console.log(validateUser);
     if (validateUser !== null) {
         return { status: 409, message: { message: 'User already registered' } };
     }
@@ -25,11 +24,22 @@ const getAllUsers = async () => {
     const users = await User.findAll({
         attributes: { exclude: ['password'] },
     });
+    // console.log(users);
     return users;
+};
+
+const getUserById = async (id) => {
+    const userById = await User.findOne({
+        where: { id },
+        attributes: { exclude: ['password'] },
+      });
+    
+      return userById;
 };
 
 module.exports = {
     insertLogin,
     insertUser,
     getAllUsers,
+    getUserById,
 };

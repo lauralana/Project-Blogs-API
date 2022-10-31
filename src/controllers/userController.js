@@ -1,4 +1,4 @@
-const { insertLogin, insertUser, getAllUsers } = require('../services/userService');
+const { insertLogin, insertUser, getAllUsers, getUserById } = require('../services/userService');
 
 const insertLoginOnController = async (req, res) => {
     const { email } = req.body;
@@ -19,14 +19,25 @@ const insertUserOnController = async (req, res) => {
 
 const getAllUsersOnController = async (_req, res) => {
     const users = await getAllUsers();
-    console.log(users);
+    // console.log(users);
     const result = res.status(200).json(users);
 
     return result;
+};
+
+const getUserByIdOnController = async (req, res) => {
+    const { id } = req.params;
+    const userById = await getUserById(Number(id));
+
+    if (userById) {
+    return res.status(200).json(userById);
+    }
+    return res.status(404).json({ message: 'User does not exist' });
 };
 
 module.exports = {
     insertLoginOnController,
     insertUserOnController,
     getAllUsersOnController,
+    getUserByIdOnController,
 };
