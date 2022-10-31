@@ -19,7 +19,6 @@ const insertUserOnController = async (req, res) => {
 
 const getAllUsersOnController = async (_req, res) => {
     const users = await getAllUsers();
-    // console.log(users);
     const result = res.status(200).json(users);
 
     return result;

@@ -33,7 +33,9 @@ const getUserById = async (id) => {
         where: { id },
         attributes: { exclude: ['password'] },
       });
-
+      if (userById) {
+        return camelize(userById.dataValues);
+      }
       return camelize(userById);
 };
 
