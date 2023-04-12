@@ -5,7 +5,7 @@ Este projeto consiste em uma API responsável pelo CRUD de um blog feita em volt
 
 <strong>As principais tecnologias utilizadas no projeto são:</strong> MySQL, Sequelize, Node.js e JavaScript.
 
-## Para inicializar o projeto em sua máquina:
+## Para inicializar o projeto em sua máquina :
 
 Todos os comandos descritos abaixo devem ser executados dentro da pasta raíz do projeto, após ser feito o clone do repositório com o comando `git clone git@github.com:lauralana/Project-Blogs-API.git`
 
@@ -40,7 +40,7 @@ Todos os comandos descritos abaixo devem ser executados dentro da pasta raíz do
 
 
 
-  ## 👉 Sem Docker
+  ### 👉 Sem Docker
 
   > :information_source: Instale as dependências [**Caso existam**] com `npm install`
 
