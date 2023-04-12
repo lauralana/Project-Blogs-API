@@ -3,16 +3,16 @@
 ## Sobre :
 Este projeto consiste em uma API responsável pelo CRUD de um blog feita em volta do modelo MSC.
 
-As principais tecnologias utilizadas no projeto são: MySQL, Sequelize, Node.js e JavaScript.
+<strong>As principais tecnologias utilizadas no projeto são:</strong> MySQL, Sequelize, Node.js e JavaScript.
 
-### Para inicializar o projeto em sua máquina:
+## Para inicializar o projeto em sua máquina:
 
-Todos os comandos descritos abaixo devem ser executados dentro da pasta raíz do projeto, após ser feito o clone do repositório com o comando `git clone git@github.com:ggtenari/blogs_api.git`
+Todos os comandos descritos abaixo devem ser executados dentro da pasta raíz do projeto, após ser feito o clone do repositório com o comando `git clone git@github.com:lauralana/Project-Blogs-API.git`
 
 <details>
   <summary><strong>🐋 Rodando no Docker vs Localmente</strong></summary>
   
-  ## 👉 Com Docker
+  ### 👉 Com Docker
  
   **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
 
