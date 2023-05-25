@@ -1,4 +1,5 @@
-#Blogs API
+# Blogs API
+
 [Trybe](https://www.betrybe.com/) é uma escola de tecnologia focada na formação de Desenvolvedores Web. Este projeto foi proposto como uma atividade para aprimorar os estudos em Back End.
 
 ## Sobre :
