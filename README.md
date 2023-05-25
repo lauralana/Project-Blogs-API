@@ -1,9 +1,16 @@
-# Project Blogs API
+#Blogs API
+[Trybe](https://www.betrybe.com/) é uma escola de tecnologia focada na formação de Desenvolvedores Web. Este projeto foi proposto como uma atividade para aprimorar os estudos em Back End.
 
 ## Sobre :
-Este projeto consiste em desenvolver uma API responsável pelo CRUD(criar, ler, atualizar e excluir registros de banco de dados) de um blog feita em volta do modelo MSC.
+Este projeto consiste em desenvolver uma API responsável pelo CRUD (criar, ler, atualizar e excluir registros de banco de dados) de um blog feito em volta do modelo MSC. A aplicação também realiza autenticação para conceder permissões aos usuários.
 
-<strong>As principais tecnologias utilizadas no projeto são:</strong> MySQL, Sequelize, Node.js e JavaScript.
+## Tecnologias e ferramentas:
+
+As principais tecnologias utilizadas no projeto são:
+- MySQL
+- Sequelize
+- Node.js 
+- JavaScript
 
 ## Para inicializar o projeto em sua máquina :
 
