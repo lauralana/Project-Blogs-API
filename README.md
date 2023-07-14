@@ -1,7 +1,5 @@
 # Blogs API
 
-[Trybe](https://www.betrybe.com/) é uma escola de tecnologia focada na formação de Desenvolvedores Web. Este projeto foi proposto como uma atividade para aprimorar os estudos em Back End.
-
 ## Sobre :
 Este projeto consiste em desenvolver uma API responsável pelo CRUD (criar, ler, atualizar e excluir registros de banco de dados) de um blog feito em volta do modelo MSC. A aplicação também realiza autenticação para conceder permissões aos usuários.
 
